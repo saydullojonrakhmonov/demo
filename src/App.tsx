@@ -1,13 +1,18 @@
-import { FireworksBackground } from "@/components/animate-ui/components/backgrounds/fireworks"
-
+import { Atom } from "react-loading-indicators"
 
 function App() {
   return (
-    <div className=" w-full h-screen overflow-hidden">
-      <h1 className="absolute top-56 left-1/2 transform -translate-x-1/2 text-4xl font-bold text-black z-10 font-serif">
-        Coming soon
-      </h1>
-      <FireworksBackground className="w-full h-full" />
+    <div className="page">
+      <div className="content">
+        <div className="loader">
+          <Atom
+            color={["#32cd32", "#327fcd", "#cd32cd", "#cd8032"]}
+            size="large" speedPlus={-1}
+          />
+        </div>
+        <h1 className="gradient-text">Coming soon</h1>
+
+      </div>
     </div>
   )
 }
