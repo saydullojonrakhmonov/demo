@@ -15,7 +15,7 @@ function App() {
         <h1 className="gradient-text">Coming soon</h1>
 
       </div>
-      <SpeedInsights/>
+      <SpeedInsights />
       <Analytics />
     </div>
   )
