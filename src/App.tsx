@@ -1,4 +1,6 @@
 import { Atom } from "react-loading-indicators"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <h1 className="gradient-text">Coming soon</h1>
 
       </div>
+      <SpeedInsights/>
+      <Analytics />
     </div>
   )
 }
